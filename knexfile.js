@@ -2,7 +2,7 @@
 
 const localPg = {
   host: 'localhost',
-  database: 'kidsfly',
+  database: 'artfolio',
   user: 'louis',
   pass: 'louis'
 };
@@ -13,7 +13,7 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './data/kidsfly.sqlite3'
+      filename: './data/artfolio.sqlite3'
     },
     useNullAsDefault: true,
     migrations: {
