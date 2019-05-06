@@ -8,6 +8,7 @@ const postsRouter = require('../routers/postsRouter');
 const commentsRouter = require('../routers/commentsRouter');
 const messagesRouter = require('../routers/messagesRouter');
 const configRouter = require('../routers/configRouter');
+const bookingRouter = require('../routers/bookingRouter');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { isValidEmail, isValidPassword } = require('../middlewares/middleware');
@@ -20,6 +21,7 @@ server.use(
 );
 
 server.use('/posts', postsRouter);
+server.use('/booking', bookingRouter);
 server.use('/comments', commentsRouter);
 server.use('/messages', messagesRouter);
 server.use('/config', configRouter);
